@@ -59,8 +59,8 @@ func goFun(Url string,Referer string, wg *sync.WaitGroup){
 	wg.Done();
 }
 
-var count = flag.Int("c",8,"cocurrent thread for download");
-var url = flag.String("s","https://baidu.com","target url")
+var count = flag.Int("c",32,"cocurrent thread for download");
+var url = flag.String("s","https://target.url","target url")
 var referer = flag.String("r","","referer url")
 
 func main(){
