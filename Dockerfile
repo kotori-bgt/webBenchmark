@@ -1,4 +1,5 @@
 FROM alpine
 WORKDIR /app
-ADD webBenchmark /app
-ENTRYPOINT ["webBenchmark"]
+ADD webBenchmark .
+RUN chmod +x webBenchmark
+ENTRYPOINT ["./webBenchmark"]
