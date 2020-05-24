@@ -1,6 +1,9 @@
 # webBenchmark
 a simple tool of website benchmark.
 
+# Docker Usage: 
+    docker pull mylolis/webbenchmark
+    docker run -d --restart=always --name webbenchmark mylolis/webbenchmark -s target url -c 32
 # Usage: 
     webBenchmark -c [COUNT] -s [URL] -r [REFERER]
     -c int
